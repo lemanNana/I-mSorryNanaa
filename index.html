@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm sorry nanaaa</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffe6f2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #minta-maaf-container {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateX(-100%);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        p {
+            font-size: 2em;
+            line-height: 1.6;
+            opacity: 0;
+            transform: translateX(-20px);
+            transition: opacity 1s ease, transform 1s ease;
+            margin-bottom: 20px;
+            color: #000000;
+        }
+
+        button {
+            padding: 15px 20px;
+            width: 200px;
+            height: 75px;
+            font-size: 2em;
+            background-color: #ff66b2;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            opacity: 0;
+            transform: translateX(-20px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        img {
+            width: 250px;
+            height: 250px;
+            background-color: #ff66b2;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="minta-maaf-container">
+        <p>Pleaseee tolongg bangettt dibacaaa</p>
+        <img src="./Gift/emote.gif" alt=""> <br> <br>
+        <button onclick="mintaMaaf()">Baca</button>
+    </div>
+
+    <script>
+        function mintaMaaf() {
+            window.location.href = "ImSorryNanaaa.html";
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('minta-maaf-container').style.opacity = 1;
+            document.getElementById('minta-maaf-container').style.transform = 'translateX(0)';
+
+            setTimeout(function() {
+                document.querySelector('p').style.opacity = 1;
+                document.querySelector('p').style.transform = 'translateX(0)';
+                document.querySelector('button').style.opacity = 1;
+                document.querySelector('button').style.transform = 'translateX(0)';
+                document.querySelector('img').style.opacity = 1;
+                document.querySelector('img').style.transform = 'translateY(0)';
+            }, 500);
+        });
+    </script>
+
+</body>
+</html>

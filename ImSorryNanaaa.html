@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm sorry nanaaa</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffe6f2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #minta-maaf-container {
+            text-align: center;
+            padding: 20px;
+            background-color: transparent;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateX(-100%);
+            transition: opacity 1s ease, transform 1s ease;
+            max-width: 80%; 
+        }
+
+        h1 {
+            color: #ff66b2;
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 27px;
+            line-height: 1.2em;
+            opacity: 0;
+            transform: translateX(-20px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        img {
+            width: 100%; 
+            max-width: 150px;
+            height: auto; 
+            background-color: #ff66b2;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        @media only screen and (max-width: 600px) {
+         
+            #minta-maaf-container {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="minta-maaf-container">
+        <h1>I'm Sorry</h1>
+        <p>
+            Gw mau minta maaf. Gw udah bikin lu sedih, nahan" rasa kangen, gw gak mikirin kondisi lu. Gw egois banget,
+            gw gak ada saat lu lagi butuh support. Gw nyesel gw lakuin itu semua. Gw butuh lu. Tanpa lu gw gak tau
+            mau diapain hidup gw. Tujuan gw mau nikah sama lu, mau berkeluarga sama lu, mau sama lu selamanya sampe
+            akhir. Gw tarik semuanya, gw gak butuh waktu, gw butuhnya lu. Gw mohon sebesar"nya pleaseee pleaseeee
+            pleaseee. Gw gak tau lagi mau diapain hidup gw kalo lu gak ada. Pleaseee gw mohon sebesar"nya kasih gw
+            kesempatan terakhir pleasee banget. Gw bakal perbaikin semuanyaaa. Gw tau lu muak dengernya, tapi pleasee
+            pleasee pleasee bangetttt.
+        </p>
+
+        <img src="./Gift/manga-toon.gif" alt="">
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('minta-maaf-container').style.opacity = 1;
+            document.getElementById('minta-maaf-container').style.transform = 'translateX(0)';
+
+            setTimeout(function () {
+                document.querySelector('p').style.opacity = 1;
+                document.querySelector('p').style.transform = 'translateX(0)';
+                document.querySelector('img').style.opacity = 1;
+                document.querySelector('img').style.transform = 'translateY(0)';
+            }, 500);
+        });
+    </script>
+
+</body>
+
+</html>
